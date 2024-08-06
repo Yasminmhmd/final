@@ -1,0 +1,182 @@
+.display{
+    display: flex;
+}
+
+
+.counter-wrapper{
+    background-color: rgb(242, 250, 242);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    padding: 3rem;
+    margin-top:  6rem;
+    position: relative;
+}
+.counter-wrapper::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background:  grey rgba(0, 0, 0, 7);
+    z-index: 1;
+}
+.counter{
+    text-align: center;
+    color: black;
+    z-index: 2;
+    position: relative;
+}
+.counter::before{
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 50%;
+    width: 20%;
+    height: -2rem;
+    background: whitesmoke;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.counter .count{
+    font-size: 2rem;
+    margin-bottom: 1rem ;
+}
+.counter .p{
+     font-size: 1.4rem;
+     font-weight: 200;
+}
+
+.service-col{
+    /* border-radius: 5px;
+    border: solid 3px white; */
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 30px;
+    
+}
+.service-wrap,.ser-overlay {
+    padding: 70px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border: solid 3px white;
+    
+}
+
+.ser-overlay{
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:100%;
+    transition: top 0.5s ease-in-out;
+    /* animation-name: anime ;
+    animation-duration: 2s all; */
+}
+.service-col:hover .ser-overlay {
+    top: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.our{
+    margin-left:20%;
+    background-color:whitesmoke;
+}
+.lineup{
+    width: 5rem;
+    height: 0.1rem; 
+    margin-left:3rem;
+}
+.linedown{
+         width: 9rem;
+         height: 0.1rem;
+         margin-top:6px;
+        
+}
+.ourclients{
+    margin-top: 10%;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+.brands{
+        margin-top: 12%;
+        
+
+}
+
+
+
+.upfooter{
+    background-color: blue;
+    left: 0;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    color: white;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+ .final{
+      margin-top: 3%;
+      height: 60px;
+      border-bottom: 3px solid blue;
+ }
+ .buttons{
+     margin-top: 3%;
+     margin-left: 70px;
+     padding: 9px;
+ }
+ .btn{
+     background-color: white;
+     border-radius: 50% solid black;
+ }
